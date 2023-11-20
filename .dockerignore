@@ -1,0 +1,14 @@
+# Archivos y carpetas generados durante el desarrollo
+node_modules
+dist
+.cache
+
+# Archivos de control de versiones
+.git
+.gitignore
+
+# Otros archivos y carpetas innecesarios
+.dockerignore
+.docker
+.env
+.vscode

@@ -24,8 +24,7 @@
 
 ## Description
 
-[Nest](https://github.com/nestjs/nest) framework TypeScript starter repository.
-
+Prueba técnica CSTI 
 ## Installation
 
 ```bash
@@ -50,13 +49,26 @@ $ pnpm run start:prod
 ```bash
 # unit tests
 $ pnpm run test
-
-# e2e tests
-$ pnpm run test:e2e
-
-# test coverage
-$ pnpm run test:cov
 ```
+
+## Document
+
+| Endpoints            | Verbo | Desc                                          |
+| -------------------- | ----- | --------------------------------------------- |
+| /cards/tokens        | POST  | registra, genera y retorna una card con reqId |
+| /cards/tokens/:reqId | GET   | retorna la cc de la db in memory or fisica    |
+
+## Environment
+| Name          | Value        |
+| ------------- | ------------ |
+| DB_HOST       | localhost    |
+| DB_PORT       | 5001         |
+| DB_USERNAME   | leo          |
+| DB_PASSWORD   | cmcx100pre   |
+| DB_DATABASE   | VaultGuardDB |
+| DB_REDIS_HOST | localhost    |
+| DB_REDIS_PORT | 6379         |
+| DB_REDIS_TTL  | 900          |
 
 ## Support
 
