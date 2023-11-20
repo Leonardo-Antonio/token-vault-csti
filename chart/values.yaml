@@ -15,15 +15,10 @@ nameOverride: ""
 fullnameOverride: ""
 
 serviceAccount:
-  # Specifies whether a service account should be created
   create: true
-  # Automatically mount a ServiceAccount's API credentials?
-  automount: true
-  # Annotations to add to the service account
+  # automount: true
   annotations: {}
-  # The name of the service account to use.
-  # If not set and create is true, a name is generated using the fullname template
-  name: ""
+  name: "api-token-cards"
 
 podAnnotations: {}
 podLabels: {}
@@ -58,6 +53,17 @@ ingress:
   #  - secretName: chart-example-tls
   #    hosts:
   #      - chart-example.local
+
+envVars: 
+  DB_HOST: localhost
+  DB_PORT: 5001
+  DB_USERNAME: leo
+  DB_PASSWORD: cmcx100pre
+  DB_DATABASE: VaultGuardDB
+  
+  DB_REDIS_HOST: localhost
+  DB_REDIS_PORT: 6379
+  DB_REDIS_TTL: 900
 
 resources: {}
   # We usually recommend not to specify default resources and to leave this as a conscious
