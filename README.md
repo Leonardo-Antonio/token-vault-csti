@@ -64,7 +64,7 @@ $ pnpm run test
 | DB_HOST       | localhost    |
 | DB_PORT       | 5001         |
 | DB_USERNAME   | leo          |
-| DB_PASSWORD   | cmcx100pre   |
+| DB_PASSWORD   | <password>   |
 | DB_DATABASE   | VaultGuardDB |
 | DB_REDIS_HOST | localhost    |
 | DB_REDIS_PORT | 6379         |
