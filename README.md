@@ -31,6 +31,11 @@ Prueba técnica CSTI
 $ pnpm install
 ```
 
+## Run Migrations
+```bash
+npm run build && npx typeorm migration:run -d dist/db/data-source.js
+```
+
 ## Running the app
 
 ```bash
